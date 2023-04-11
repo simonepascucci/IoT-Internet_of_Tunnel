@@ -9,7 +9,8 @@ Official repo of our IoT project.
 | `Davide Avesani` | [![name](https://github.com/nardoz-dev/projectName/blob/main/docs/sharedpictures/LogoIn.png)]() | [![name](https://github.com/nardoz-dev/projectName/blob/main/docs/sharedpictures/GitHubLogo.png)](https://github.com/aveklan) |
 
 ## Brief description
-"Smart IoT tunnel" is a project which wants to deal with the problem of pollution and traffic under a tunnel, like the one near Termini Station in Rome. In particular we want to improve the air quality and light levels under a tunnel in order to improve the life quality of both driving and walking people. 
+The Smart IoT Tunnel project is a Monytoring System solution designed to monitor and maintain the air quality and lighting conditions in a tunnel.  
+With this project, we aim to improve the air quality and light levels inside the tunnel, in order to improve safety and healthiness for gallery users, both for  pedestrians and vehicles.
 
 ### First Delivery
 
