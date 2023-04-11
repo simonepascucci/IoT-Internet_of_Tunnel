@@ -6,7 +6,7 @@ Official repo of our IoT project.
 | :---: | :---: | :---: |
 | `Simone Pascucci` | [![name](https://github.com/nardoz-dev/projectName/blob/main/docs/sharedpictures/LogoIn.png)](https://www.linkedin.com/in/simone-pascucci-17751126b/) | [![name](https://github.com/nardoz-dev/projectName/blob/main/docs/sharedpictures/GitHubLogo.png)](https://github.com/simonepascucci) |
 | `Gavriel di Nepi` | [![name](https://github.com/nardoz-dev/projectName/blob/main/docs/sharedpictures/LogoIn.png)]() | [![name](https://github.com/nardoz-dev/projectName/blob/main/docs/sharedpictures/GitHubLogo.png)](https://github.com/gaggo00) |
-| `Davide Avesani` | [![name](https://github.com/nardoz-dev/projectName/blob/main/docs/sharedpictures/LogoIn.png)]([https://www.linkedin.com/in/davide-avesani-394835223/](https://www.linkedin.com/in/davide-avesani-394835223/)) | [![name](https://github.com/nardoz-dev/projectName/blob/main/docs/sharedpictures/GitHubLogo.png)](https://github.com/aveklan) |
+| `Davide Avesani` | [![name](https://github.com/nardoz-dev/projectName/blob/main/docs/sharedpictures/LogoIn.png)](https://www.linkedin.com/in/davide-avesani-394835223/) | [![name](https://github.com/nardoz-dev/projectName/blob/main/docs/sharedpictures/GitHubLogo.png)](https://github.com/aveklan) |
 
 ## Brief description
 The Smart IoT Tunnel project is a Monytoring System solution designed to monitor and maintain the air quality and lighting conditions in a tunnel.  
