@@ -11,4 +11,6 @@ use in generating analyses and statistical data.
 
 ## Project Architecture
 
+![Project architecture schema](/docs/src/images/concept_schema.JPG)
+
 ## Components
