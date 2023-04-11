@@ -20,3 +20,6 @@ Official repo of our IoT project.
  -  [Design](https://github.com/simonepascucci/smart_IoT_Tunnel/blob/main/docs/firstDelivery/Design.md)
 
  -  [Evaluation](https://github.com/simonepascucci/smart_IoT_Tunnel/blob/main/docs/firstDelivery/Evaluation.md)
+
+
+[^1]: [SlidePresentation1stDelivery](https://drive.google.com/drive/folders/19eqFpTNYTQZWTqECtUOLSaU-NNftseN5?usp=sharing)
