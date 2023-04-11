@@ -17,6 +17,6 @@ Official repo of our IoT project.
  
  -  [Concept]()
 
- -  [Technology]()
+ -  [Design]()
 
  -  [Evaluation]()
