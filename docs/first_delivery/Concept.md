@@ -26,4 +26,5 @@ Improving the overall air quality and light conditions inside the gallery, this 
 - Reducing the overall number of car accidents inside the tunnel.
 - Facilitate the use of the tunnel by pedestrians, where applicable.
 
+These objectives are designed to be met in both normal and congested traffic situations.
 In addition, the system is designed to use the various components only when necessary, allowing efficient use of energy.
