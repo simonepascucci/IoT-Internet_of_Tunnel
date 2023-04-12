@@ -25,9 +25,9 @@ To evaluate energy efficiency, the power consumption of the system must be measu
 
 ## Expected results
 
-The accuracy of the system will be verified by comparing the data collected by the system with that of a reference air quality monitoring station and a lux meter for light levels. The results will show that the system had an error rate of less than a certain percentage value.
+- The accuracy of the system will be verified by comparing the data collected by the system with that of a reference air quality monitoring station and a lux meter for light levels. The results will show that the system had an error rate of less than a certain percentage value.
 
-The responsiveness of the system will be tested by subjecting it to sudden changes in air quality and light levels. The system should respond within a few seconds, and the time taken to reach a stable state after a change will be less than one minute in order to have us sufficently satisfied with the result.
+- The responsiveness of the system will be tested by subjecting it to sudden changes in air quality and light levels. The system should respond within a few seconds, and the time taken to reach a stable state after a change will be less than one minute in order to have us sufficently satisfied with the result.
 
-Finally, the energy efficiency of the system will be measured by monitoring power consumption in standby mode and active mode.
+- Finally, the energy efficiency of the system will be measured by monitoring power consumption in standby mode and active mode.
 
