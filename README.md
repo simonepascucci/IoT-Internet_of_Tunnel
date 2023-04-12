@@ -17,11 +17,11 @@ With this project, we aim to improve the air quality and light levels inside the
 
 ### Documents
 
-- [Concept](https://github.com/simonepascucci/smart_IoT_Tunnel/blob/main/docs/firstDelivery/Concept.md)
+- [Concept](https://github.com/simonepascucci/smart_IoT_Tunnel/blob/main/docs/first_delivery/Concept.md)
 
-- [Design](https://github.com/simonepascucci/smart_IoT_Tunnel/blob/main/docs/firstDelivery/Design.md)
+- [Design](https://github.com/simonepascucci/smart_IoT_Tunnel/blob/main/docs/first_delivery/Design.md)
 
-- [Evaluation](https://github.com/simonepascucci/smart_IoT_Tunnel/blob/main/docs/firstDelivery/Evaluation.md)
+- [Evaluation](https://github.com/simonepascucci/smart_IoT_Tunnel/blob/main/docs/first_delivery/Evaluation.md)
 
 ### Video
 
