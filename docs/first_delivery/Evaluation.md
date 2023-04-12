@@ -1,7 +1,7 @@
 # Evaluation
 
 ## Overview
-The IoT project is designed to monitor air quality and light levels under a tunnel. Two air quality sensors and two photoresistor are used to collect data in real-time. In addition the system incorporates fans that turn on when the air quality decreases below a certain threshold, and lights that turn on independently when the light levels fall below a certain value.
+The IoT project is designed to monitor air quality and light levels under a tunnel. Some air quality sensors and some photoresistor are used to collect data in real-time. The system is connected to some actuators that activates the fan system when the air quality decreases below a certain threshold, and the lighting system that turn on independently when the light levels fall below a certain value.
 
 ## Performance evaluation metrics
 
@@ -13,7 +13,7 @@ To evaluate accuracy, the system must be tested against a calibrated instrument,
 
 ### Responsiveness
 
-The responsiveness of the system is also critical. The system should quickly respond to changes in air quality and light levels.
+The responsiveness of the system is also critical. The system should quickly respond to changes in air quality and light levels, to ensure the correct functioning also in case of emergency situations.
 
 To evaluate responsiveness, the system must be tested by exposing it to sudden changes in air quality and light levels. The average response time and the time it takes to reach a stable state after a change must be measured.
 
