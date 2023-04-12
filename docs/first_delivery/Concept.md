@@ -17,7 +17,7 @@ use in generating analyses and statistical data.
 
 ### Usage example
 
-![Usage example](/docs/src/images/usage_example.png)
+![Usage example](/docs/src/images/usage_example.jpg)
 
 ## Impact
 
