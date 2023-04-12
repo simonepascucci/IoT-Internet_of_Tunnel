@@ -13,11 +13,11 @@ use in generating analyses and statistical data.
 
 ### Concept outline
 
-![Project architecture outline](/docs/src/images/concept_outline.JPG)
+![Project architecture outline](/docs/src/images/schemas/concept_outline.JPG)
 
 ### Usage example
 
-![Usage example](/docs/src/images/usage_example.jpg)
+![Usage example](/docs/src/images/schemas/usage_example.jpg)
 
 ## Impact
 
