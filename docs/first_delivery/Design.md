@@ -31,7 +31,7 @@ The collected data will then be sent via the LoRa network to a remote AWS web se
 
   The ventilation consists in a set of electric motor actuators managed by the ESP32 controller connected to a fan to generate airflow.
 
-- Lighting system
+- Lighting system  
   A lighting system is designed to perform the following functions:
 
   - Under normal operating conditions, lighten the tunnel to allow the normal movement of cars and pedestrians in safety;
