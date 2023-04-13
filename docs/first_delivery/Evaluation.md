@@ -15,7 +15,7 @@ To evaluate accuracy, the system must be tested against a calibrated instrument,
 
 The responsiveness of the system is also critical. The system should respond to changes in air quality and light levels, to ensure the correct functioning also in case of emergency situations.
 
-To evaluate responsiveness, the system must be tested by exposing it to sudden changes in air quality and light levels. The average response time and the time it takes to reach a stable state after a change must be measured.
+To evaluate responsiveness, the system must be tested by exposing it to changes in air quality and light levels. The average response time and the time it takes to reach a stable state after a change must be measured.
 
 ### Energy Efficiency
 
