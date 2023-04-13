@@ -7,25 +7,17 @@ The IoT project is designed to monitor air quality and light levels under a tunn
 
 ### Accuracy
 
-The accuracy of the system is a key performance metric. The project must accurately measure and detect changes in air quality and light levels. 
-
-To evaluate accuracy, the system must be tested against a calibrated instrument, such as a reference air quality monitoring station, and a lux meter for light levels. 
+The accuracy of the system is a key performance metric. The solution in question, must accurately measure and detect changes in air quality and light levels.
+The overall values detected must remain inside a defined range to consider the solution effective. 
 
 ### Responsiveness
 
-The responsiveness of the system is also critical. The system should respond to changes in air quality and light levels, to ensure the correct functioning also in case of emergency situations.
-
-To evaluate responsiveness, the system must be tested by exposing it to changes in air quality and light levels. The average response time and the time it takes to reach a stable state after a change must be measured.
-
-### Energy Efficiency
-
-The energy efficiency of the system is an important performance metric in IoT projects. Since the system runs continuously, it must be designed to consume minimal energy.
-
-To evaluate energy efficiency, the power consumption of the system must be measured in different states, such as standby and active states.
+The responsiveness of the system is also important. The system should respond to changes in air quality and light levels, to ensure the correct functioning, also in case of emergency situations.
+One way to evaluate this parameter would be to expose it to specific changes in air quality and light levels and measure the time it takes to reach the predefined range after these changes.
 
 ## Expected results
 
-- The accuracy of the system will be verified by comparing the data collected by the system with that of a reference air quality monitoring station and a lux meter for light levels.  
+As mentioned before, to consider the system effective, the overall values detected must remain inside a defined range. We then expect that our system is capable of manage different traffic situations and lightning conditions by keeping the values in question inside the correct ranges.  
+As a prerequisite for achieving this behaviour, we expect the accuracy of the system to be good enough to allow the system to detect and react to specific situations and requirements in a reasonable amount of time.
 
-- The responsiveness of the system will be tested by subjecting it to changes in air quality and light levels.
-
+Therefore, we finally expect a decrease in the number of car accident inside the gallery and a more efficient power management.
