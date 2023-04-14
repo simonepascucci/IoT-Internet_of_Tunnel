@@ -1,4 +1,4 @@
-# Smart IoT Tunnel
+# IOT: Internet Of Tunnel
 
 ## People
 
@@ -10,7 +10,7 @@
 
 ## Brief description
 
-The Smart IoT Tunnel project is a Monitoring System solution designed to monitor and maintain the air quality and lighting conditions in a tunnel.  
+Internet Of Tunnel project is a Monitoring System solution designed to monitor and maintain the air quality and lighting conditions in a tunnel.  
 With this project, we aim to improve the air quality and light levels inside the tunnel, in order to improve safety and healthiness for gallery users, both for pedestrians and vehicles.
 
 ## First Delivery
