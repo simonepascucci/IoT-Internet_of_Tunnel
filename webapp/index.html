@@ -1,23 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IoT: Internet of Tunnel</title>
-    <link rel="stylesheet" href="index.css"></link>
+    <link rel="stylesheet" href="index.css">
+    </link>
     <script src="index.js"></script>
 </head>
+
 <body onload="setInterval(init,1000)">
-    IoT PROJECT WEB APP
-    <h2>Latest measurement values:</h2>
-    <h4 id="AQ1">Air Quality sensor 1: /</h4>
-    <h4 id="AQ2">Air Quality sensor 2: /</h4>
-    <h4 id="Lux1">Light level 1: /</h4>
-    <h4 id="Lux2">Light level 2: /</h4>
+
+    <h1> Internet Of Tunnel</h1>
+    <div>
+        <div class="square" id="square1">
+            <div id="interno">
+                <p id="AQ1">NA</p>
+                <span>Air Quality Sensor 1:</span>
+                
+            </div>
+        </div>
+
+        <div class="square" id="square2">
+            <div id="interno">
+                <p id="AQ2">NA</p>
+                <span>Air Quality Sensor 2:</span>
+                
+            </div>
+        </div>
+
+        <div class="square" id="square3">
+            <div id="interno">
+                <p id="Lux1">NA</p>
+                <span>Light Sensor 1:</span>
+                
+            </div>
+        </div>
+
+        <div class="square" id="square4">
+            <div id="interno">
+                <p id="Lux2">NA</p>
+                <span>Light Sensor 2:</span>
+               
+            </div>
+        </div>
+    </div>
+
+
     <h4 id="AQ1s">Air Quality 1 Status: /</h4>
     <h4 id="AQ2s">Air Quality 2 Status: /</h4>
     <h4 id="L1s">Light zone 1 Status: /</h4>
     <h4 id="L2s">Light zone 2 Status: /</h4>
     <h4 id="ts"></h4>
+
+    
 </body>
+
+
+
 </html>
