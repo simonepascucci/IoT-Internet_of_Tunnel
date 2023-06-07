@@ -1,51 +1,28 @@
 # Evaluation
 
-## Overview
+## What needs to be evaluated
 
-The IoT project is designed to monitor air quality and light levels under a tunnel. Some air quality sensors and some photoresistor are used to collect data in real-time. The system is connected to some actuators that activates the fan system when the air quality decreases below a certain threshold, and the lighting system that turn on independently when the light levels fall below a certain value.
+As discussed in detail in the Concept file, the aim of the project is to monitor air quality and lighting conditions inside car tunnels, with a focus on energy consumption.  
+What needs to be evaluated is therefore the ability of the system to keep lighting and air quality conditions under control, as well as the overall energy utilization.  
+Below is a brief explanation of the details of how these factors can be evaluated.
 
-## Performance evaluation metrics
+## Air quality
 
-### Air quality
+The project's objective related to air quality is to ensure that it remains below the threshold specified in the Design file, thereby maintaining a satisfactory level of air quality.  
+In order for the system to be deemed effective, it is crucial that the levels of air quality pollutants do not exceed specified values for a duration that is considered harmful to human health. The specified time limit can be found in the Design file's table.  
+After the initial version of the system is fully developed and deployed, it might be necessary to employ external sensors for monitoring purposes. These sensors would verify whether the values reported by the system align with the measurements obtained independently.
 
-The European Union established the current Ambient Air Quality and Clean Air for Europe Standards in 2008 under the Thematic Strategy on Air Pollution. (TSAP). We base our performance evaluation on this standard.
+## Light conditions
 
-https://environment.ec.europa.eu/topics/air/air-quality/eu-air-quality-standards_en
+In the context of ensuring an effective system, similar to air quality, it is crucial to guarantee minimum light values throughout the entire tunnel. Additionally, just like with the previous case, it may be necessary to incorporate external sensors for monitoring purposes after its full development and deployment.
 
-From all the pollutant listed, the ones produced by motor vehicles are (in order of emitted quantity):
+## Overall energy usage
 
-1. carbon dioxide (CO2)
-2. carbon monoxide (CO)
-3. nitrogen dioxide (NO2)
-4. sulfur dioxide (SO2)
-5. particulate matter (PM)
-6. volatile organic compounds (VOCs)
+The energy consumption of the proposed system is calibrated based on the actual needing of the various actuators, particularly the air conditioning system. This enables the system to intelligently activate or deactivate the actuators and adjust their intensity as needed, resulting in optimized energy usage. As a result, when traffic is low or there is ample natural light, our system can consume significantly less energy compared to a system that does not calibrate the usage of actuators and operates at maximum speed continuously.  
+We performed some experiments with our prototype to better explain this.
 
-The limit values as stated in the Standard are:
+![](/docs/src/images/schemas/energy_consumption.jpg)
 
-| Pollutant          | Formula | Maximum concentration | Maximum exposition time |
-| :----------------- | :-----: | --------------------: | ----------------------- |
-| carbon dioxide     |   CO2   |            1800 mg/m3 | 8 hour                  |
-| carbon monoxide    |   CO    |              10 mg/m3 | 8 hour                  |
-| Nitrogen dioxide   |   NO2   |             200 mg/m3 | 1 hour                  |
-| Sulphur dioxide    |   SO2   |             350 mg/m3 | 1 hour                  |
-| Particulate matter |  PM10   |              50 mg/m3 | 24 hour                 |
+## Network
 
-2. Once the
-
-### Accuracy
-
-The accuracy of the system is a key performance metric. The solution in question, must accurately measure and detect changes in air quality and light levels.
-The overall values detected must remain inside a defined range to consider the solution effective.
-
-### Responsiveness
-
-The responsiveness of the system is also important. The system should respond to changes in air quality and light levels, to ensure the correct functioning, also in case of emergency situations.
-One way to evaluate this parameter would be to expose it to specific changes in air quality and light levels and measure the time it takes to reach the predefined range after these changes.
-
-## Expected results
-
-As mentioned before, to consider the system effective, the overall values detected must remain inside a defined range. We then expect that our system is capable of manage different traffic situations and lightning conditions by keeping the values in question inside the correct ranges.  
-As a prerequisite for achieving this behaviour, we expect the accuracy of the system to be good enough to allow the system to detect and react to specific situations and requirements in a reasonable amount of time.
-
-Therefore, we finally expect a decrease in the number of car accident inside the gallery and a more efficient power management.
+Our network architecture has been designed in a way that doesn't raise any specific criticisms. However, it is important to ensure that the board can establish a connection with the MQTT bridge, and from there, maintain a stable internet connection.
