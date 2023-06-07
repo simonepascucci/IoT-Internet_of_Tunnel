@@ -1,4 +1,4 @@
-function callAPI() {
+function callAPI1() {
   var myHeaders = new Headers();
   var requestOptions = {
     method: "GET",
@@ -12,12 +12,12 @@ function callAPI() {
     requestOptions
   )
     .then((response) => response.text())
-    .then((result) => storeData(JSON.parse(result)));
+    .then((result) => storeData1(JSON.parse(result)));
 
   console.log("call Api called.");
 }
 
-function storeData(data) {
+function storeData1(data) {
   console.log(data);
   document.getElementById("AQ1").innerText = data["AQ1"];
   setColorAirQuality("square1", data["AQ1"]);
@@ -61,8 +61,34 @@ function setColorLux(squareId, value) {
     square.className = 'square green';
   }
 }
+function callAPI2() {
+  var myHeaders = new Headers();
+  var requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+  };
 
+  var latestData;
+
+  fetch(
+    "https://bg4x9od6n5.execute-api.eu-west-3.amazonaws.com/dev",
+    requestOptions
+  )
+    .then((response) => response.text())
+    .then((result) => storeData2(JSON.parse(result)));
+
+  console.log("call Api 2 called.");
+}
+
+function storeData2(data){
+  console.log(data);
+  console.log(data);
+}
 
 function init() {
-  callAPI();
+  callAPI1();
+  callAPI2();
 }
+
+
+//"https://bg4x9od6n5.execute-api.eu-west-3.amazonaws.com/dev/"
