@@ -42,13 +42,34 @@ function storeData1(data) {
   document.getElementById("Lux1").innerText = data["Lux1"];
   setColorLux("square3", data["Lux1"]);
   document.getElementById("Lux2").innerText = data["Lux2"];
-  setColorLux("square4", data["Lux1"]);
-  document.getElementById("AQ1s").innerText =
-    "Air Quality 1 Status: " + data["Status AQ1"];
-  document.getElementById("AQ2s").innerText =
-    "Air Quality 2 Status: " + data["Status AQ2"];
+  setColorLux("square4", data["Lux2"]);
+  if(data["Status AQ1"] == "SAFE")
+    document.getElementById("AQ1s").innerText =
+        "Fan zone 1: Deactivated";
+  if(data["Status AQ1"] == "MIN_RISK")
+    document.getElementById("AQ1s").innerText =
+        "Fan zone 1: Minimum speed";
+  if(data["Status AQ1"] == "MID_RISK")
+    document.getElementById("AQ1s").innerText =
+        "Fan zone 1: Medium speed";
+  if(data["Status AQ1"] == "MAX_RISK")
+    document.getElementById("AQ1s").innerText =
+        "Fan zone 1: Maximum speed";
+  if(data["Status AQ0"] == "SAFE")
+    document.getElementById("AQ1s").innerText =
+        "Fan zone 2: Deactivated";
+  if(data["Status AQ0"] == "MIN_RISK")
+    document.getElementById("AQ1s").innerText =
+        "Fan zone 2: Minimum speed";
+  if(data["Status AQ0"] == "MID_RISK")
+    document.getElementById("AQ1s").innerText =
+        "Fan zone 2: Medium speed";
+  if(data["Status AQ0"] == "MAX_RISK")
+    document.getElementById("AQ1s").innerText =
+        "Fan zone 2: Maximum speed";
+    
   document.getElementById("L1s").innerText =
-    "Light zone 1 Status: " + data["Status L1"];
+  "Light zone 1 Status: " + data["Status L1"];
   document.getElementById("L2s").innerText =
     "Light zone 2 Status: " + data["Status L2"];
   document.getElementById("ts").innerText =
