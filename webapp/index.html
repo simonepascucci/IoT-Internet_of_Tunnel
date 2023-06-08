@@ -7,7 +7,10 @@
     <title>IoT: Internet of Tunnel</title>
     <link rel="stylesheet" href="index.css">
     </link>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script>
     <script src="index.js"></script>
+    
 </head>
 
 <body onload="init()">
@@ -53,8 +56,41 @@
     <h4 id="L1s">Light zone 1 Status: /</h4>
     <h4 id="L2s">Light zone 2 Status: /</h4>
     <h4 id="ts"></h4>
-
+  <div id="second">
+  <h4 id="linea"></h4>
+  </div>
+  <div id="second">
+    <div id="tabella">
+    <l> Last 10 measurements</l>
+      <table id="myTable">
+        <thead>
+          <tr>
+            <th>Timestamp</th>
+            <th>AQ1</th>
+            <th>AQ2</th>
+            <th>Lux1</th>
+            <th>Lux2</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
     
+    <div id="grafici">
+        <l> Air Quality Graph </l>
+    <canvas height="500px" width="500px"  id="AirQualityGraph"></canvas>
+    </div>
+  </div>
+   
+    
+
+
+
+
+
+
+
 </body>
 
 
