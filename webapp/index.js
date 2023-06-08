@@ -25,7 +25,16 @@ function callAPI1() {
 }
 
 function storeData1(data) {
-  console.log(data);
+  
+  var date = "", time = "";
+  
+  for(var i = 0; i<10; i++)
+  	date += data["timestamp"][i];
+  
+  for(i = 11; i < data["timestamp"].length; i++)
+  	time += data["timestamp"][i];
+  
+  
   document.getElementById("AQ1").innerText = data["AQ1"];
   setColorAirQuality("square1", data["AQ1"]);
   document.getElementById("AQ2").innerText = data["AQ2"];
@@ -43,7 +52,7 @@ function storeData1(data) {
   document.getElementById("L2s").innerText =
     "Light zone 2 Status: " + data["Status L2"];
   document.getElementById("ts").innerText =
-    "Measurement taken at: " + data["timestamp"];
+    "Measurement taken at: " + date + " " + time;
 }
 
 function setColorAirQuality(squareId, value) {
@@ -90,15 +99,8 @@ function callAPI2() {
 function storeData2(data){
   provaTabella(data);
   creaGrafico(data);
-
 }
 
-
-
-function init() {
-  callAPI1();
-  callAPI2();
-}
 
 function provaTabella(data) {
   // Dati JSON di esempio
@@ -115,8 +117,10 @@ function provaTabella(data) {
     }
     return 0;
   });
+
   
   var tableBody = document.querySelector("#myTable tbody");
+  tableBody.innerHTML = "";
 
   for (var i = 0; i < 10; i++) {
     var row = document.createElement("tr");
@@ -159,7 +163,7 @@ function creaGrafico(data) {
 
   var labels = [];
   var data1 = [];
-  var data2=[];
+  var data2 = [];
 
   // Estrai le etichette e i dati dal JSON
   for (var i = 0; i < datiJSON.length; i++) {
@@ -168,6 +172,7 @@ function creaGrafico(data) {
     data2.push(datiJSON[i]["AQ2"]);
   }
 
+  document.getElementById("grafici").innerHTML = "<canvas id='AirQualityGraph' height='500px' width='500px'></canvas>"
   var ctx = document.getElementById("AirQualityGraph").getContext("2d");
   var myChart = new Chart(ctx, {
     type: "line",
@@ -227,6 +232,8 @@ function creaGrafico(data) {
   });
 }
 
+function init() {
+    setInterval(callAPI1, 2000);
+    setInterval(callAPI2, 10000);
+}
 
-
-//"https://bg4x9od6n5.execute-api.eu-west-3.amazonaws.com/dev/"
