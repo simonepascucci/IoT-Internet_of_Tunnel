@@ -1,6 +1,6 @@
 # Design
 
-This file is an updated version of [this file](/docs/first_delivery/Design.md)
+This file is an updated version of [this file](/docs/second_delivery/Design.md)
 
 The proper functioning of the system depends on several complex technical aspects to be taken into account. In this section, we would like to address these issues in a real case scenario, describing the solutions and adaptations made to create the prototype.
 

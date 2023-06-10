@@ -1,6 +1,6 @@
 # Concept
 
-This file is an updated version of [this file](/docs/first_delivery/Concept.md)
+This file is an updated version of [this file](/docs/second_delivery/Concept.md)
 
 ## Brief Description
 

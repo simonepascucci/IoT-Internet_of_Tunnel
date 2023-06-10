@@ -1,6 +1,6 @@
 # Evaluation
 
-This file is an updated version of [this file](/docs/first_delivery/Evaluation.md)
+This file is an updated version of [this file](/docs/second_delivery/Evaluation.md)
 
 ## What needs to be evaluated
 
