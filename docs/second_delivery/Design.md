@@ -1,6 +1,6 @@
 # Design
 
-This file is an updated version of [this file](/docs/first_delivery/Design.md)
+This file is an updated version of [this file](/docs/second_delivery/Design.md)
 
 The proper functioning of the system depends on several complex technical aspects to be taken into account. In this section, we would like to address these issues in a real case scenario, describing the solutions and adaptations made to create the prototype.
 
@@ -39,9 +39,9 @@ This sensor vary the value of the R0 resistance depending on the concentrations 
 The standard sensitivity characteristics of the MQ-135 sensor to different gases are illustrated below:
 ![](/docs/src/images/sensors_and_actuators/air_quality_sensor_graph.JPG)
 
-**Light**
-
+**Light**  
 The light sensor used is BH1750FVI, a digital Ambient Light Sensor IC for I2C bus interface.
+
 ![](/docs/src/images/sensors_and_actuators/light_sensor.jpg)
 
 ### Actuators
@@ -75,8 +75,10 @@ Based on this estimation, we can determine the time it takes for a fan to circul
 | :------------ | :-----------: | ------------- |
 | 6s            |      8s       | 17s           |
 
-**Light**  
-![](/docs/src/images/sensors_and_actuators/light.jpg)  
+**Light**
+
+![](/docs/src/images/sensors_and_actuators/light.jpg)
+
 By positioning the light source on top of the cardboard, it generates a cone of light on the bottom with a radius of 15cm. Consequently, we opted to utilize six light bulbs to adequately illuminate the entire length of the cardboard. During measurements taken at the centre of the cone, the recorded light intensity reached approximately 1600 units.
 
 ## Managing the components
@@ -91,8 +93,20 @@ We define 3 threshold of gas concentration as follows:
 
 Under the condition of no risk treshold, it is reasonable to assume that monitoring air quality every 10 minutes provides a timely response from the air conditioning system.  
 In the other conditions the graph below describes the different sampling period values.
-![](/docs/src/images/schemas/tresholds.JPG)  
+
+![](/docs/src/images/schemas/tresholds.JPG)
+
 The sampling period is based on the time needs for a fan to move a total volume of air equal to the volume of air of the tunnel.
+
+## Circuit Diagrams
+
+### Sensors & Air Conditioning System Diagram
+
+![](/docs/src/images/electric_schemas/sensors_electric_schema.png)
+
+### Lightning System Diagram
+
+![](/docs/src/images/electric_schemas/lights_electric_schema.png)
 
 ## Network architecture
 
