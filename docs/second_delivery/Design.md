@@ -131,3 +131,5 @@ By utilizing a Lambda function (AWS Python function), data is retrieved from the
 Amplify is the AWS hosting service used for deployment.
 
 Below is a sample figure of the web app
+
+![](/docs/src/images/web_app/index.png)
