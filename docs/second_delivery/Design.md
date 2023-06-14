@@ -100,6 +100,9 @@ The sampling period is based on the time needs for a fan to move a total volume 
 
 ## Circuit Diagrams
 
+We utilized two separate breadboards, one for the lightning system and one for the other components as one power supply was not generating enough current.  
+Additionally, it can be noticed that the DC motors are connected to a transistor rather than directly to the ESP32 PWM pin. This arrangement was necessary because the board alone can not generate enough current to power both motors. Using the transistor, the motors are supplied by the breadboard power supply, while the ESP32 exclusively controls their speed via PWM.
+
 ### Sensors & Air Conditioning System Diagram
 
 ![](/docs/src/images/electric_schemas/sensors_electric_schema.png)
@@ -110,4 +113,21 @@ The sampling period is based on the time needs for a fan to move a total volume 
 
 ## Network architecture
 
+The network architecture diagram and a brief description are as follows:
+
 ![](/docs/src/images/schemas/network_architecture.jpg)
+
+Step 1:  
+ESP32 board sends data to Mosquitto MQTT broker, using the MQTT protocol. The connection is established over WiFi IPV4, with both devices connected to the same network.
+
+Step 2:  
+The broker communicates with AWS IoT Core through a Python bridge always trough the MQTT protocol. The MQTT broker and bridge utilize the same topic (tunnel), while the bridge publishes the data to AWS IoT Core on the DATA topic.
+
+Step 3:  
+Data is received on AWS IoT Core, designed as if it is an ESP32 board. This elements allows to define rules to determine what actions to perform with the received data. In this way, all the data received on that specific topic is inserted into a table in DynamoDB.
+
+Step 4:  
+By utilizing a Lambda function (AWS Python function), data is retrieved from the DynamoDB. The authorization to access the database is managed by AWS IAM. The API Gateway enables the creation of a RESTful GET API connected to the Lambda function from the previous step, providing an endpoint that can be called from the web app.  
+Amplify is the AWS hosting service used for deployment.
+
+Below is a sample figure of the web app

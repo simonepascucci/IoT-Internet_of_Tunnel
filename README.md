@@ -47,7 +47,7 @@ As part of our objectives, we are committed to reducing the overall system energ
 
 ### Blog Post
 
-- [Blog Post Link](https://youtube.com)
+- [Blog Post](https://youtube.com)
 
 ### Video
 
