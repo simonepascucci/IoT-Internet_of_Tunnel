@@ -206,9 +206,6 @@ int main(void)
     char* statusAQ1 = "";
     char* statusAQ2 = "";
 
-    /* activateFanZone(FAN_ZONE_0, maxSpeed);
-    activateFanZone(FAN_ZONE_1, maxSpeed);
-    xtimer_sleep(300); */
 
     while (1){
 
@@ -219,7 +216,7 @@ int main(void)
     xtimer_sleep(1);
 
     int t1 = sampleLight(&light_zone_1_sensor);
-    if (t1 < 1000 && t1 > 150) light_zone_1_value = t1 - 120;
+    if (t1 < 1000 && t1 > 0) light_zone_1_value = t1;
     else if (t1 < 150) light_zone_1_value = t1;
     printf("Light Zone 1 Value: %d\n", light_zone_1_value);
 
@@ -233,12 +230,12 @@ int main(void)
         l2status = 0;
     else l2status = 1;
 
-    air_quality_zone_0_value = sampleAir(air_quality_zone_0_sensor, ADC_RES) - 250;
+    air_quality_zone_0_value = sampleAir(air_quality_zone_0_sensor, ADC_RES);
     printf("Air quality Zone 0 Value: %d\n", air_quality_zone_0_value);
 
     xtimer_sleep(1);
 
-    air_quality_zone_1_value = sampleAir(air_quality_zone_1_sensor, ADC_RES) - 250;
+    air_quality_zone_1_value = sampleAir(air_quality_zone_1_sensor, ADC_RES);
     printf("Air quality Zone 1 Value: %d\n", air_quality_zone_1_value);
 
     xtimer_sleep(1);
