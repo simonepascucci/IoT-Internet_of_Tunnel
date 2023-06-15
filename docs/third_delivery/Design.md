@@ -130,7 +130,7 @@ Step 4:
 By utilizing a Lambda function (AWS Python function), data is retrieved from the DynamoDB. The authorization to access the database is managed by AWS IAM. The API Gateway enables the creation of a RESTful GET API connected to the Lambda function from the previous step, providing an endpoint that can be called from the web app.  
 Amplify is the AWS hosting service used for deployment.
 
-Below is a sample figure of the web app
+Below is a sample figure of the web app accesible [at this link](https://dev.d36cnvxl90u19s.amplifyapp.com)
 
 ![](/docs/src/images/web_app/index.png)
 
