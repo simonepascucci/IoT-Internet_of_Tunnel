@@ -1,8 +1,8 @@
-const redRangeAir=2500;
-const orangeRangeAir=1300;
-const greenRangeAir=1100;
+const redRangeAir=2000;
+const orangeRangeAir=1500;
+const yellowRangeAir=1000;
+const greenRangeAir=700;
 const redRangeLux=30;
-const orangeRangeLux=70;
 const greenRangeLux=1000;
 
 function callAPI1() {
@@ -55,33 +55,32 @@ function storeData1(data) {
   if(data["Status AQ1"] == "MAX_RISK")
     document.getElementById("AQ1s").innerText =
         "Fan zone 1: Maximum speed";
-  if(data["Status AQ0"] == "SAFE")
-    document.getElementById("AQ1s").innerText =
+  if(data["Status AQ2"] == "SAFE")
+    document.getElementById("AQ2s").innerText =
         "Fan zone 2: Deactivated";
-  if(data["Status AQ0"] == "MIN_RISK")
-    document.getElementById("AQ1s").innerText =
+  if(data["Status AQ2"] == "MIN_RISK")
+    document.getElementById("AQ2s").innerText =
         "Fan zone 2: Minimum speed";
-  if(data["Status AQ0"] == "MID_RISK")
-    document.getElementById("AQ1s").innerText =
+  if(data["Status AQ2"] == "MID_RISK")
+    document.getElementById("AQ2s").innerText =
         "Fan zone 2: Medium speed";
-  if(data["Status AQ0"] == "MAX_RISK")
-    document.getElementById("AQ1s").innerText =
+  if(data["Status AQ2"] == "MAX_RISK")
+    document.getElementById("AQ2s").innerText =
         "Fan zone 2: Maximum speed";
-    
-  document.getElementById("L1s").innerText =
-  "Light zone 1 Status: " + data["Status L1"];
-  document.getElementById("L2s").innerText =
-    "Light zone 2 Status: " + data["Status L2"];
-  document.getElementById("ts").innerText =
-    "Measurement taken at: " + date + " " + time;
-}
+  if(data["Status L1"] == 0) document.getElementById("L1s").innerText = "Light zone 1 Status: Not Working";
+  else document.getElementById("L1s").innerText = "Light zone 1 Status: Working correctly";
+  if(data["Status L2"] == 0) document.getElementById("L2s").innerText = "Light zone 2 Status: Not Working";
+  else document.getElementById("L2s").innerText = "Light zone 2 Status: Working correctly";
+  document.getElementById("ts").innerText="Measurement taken at: " + date + " " + time;}
 
 function setColorAirQuality(squareId, value) {
   var square = document.getElementById(squareId);
 
   if (value < greenRangeAir) {
     square.className = 'square green';
-  } else if (value < orangeRangeAir) {
+  } else if (value < yellowRangeAir) {
+    square.className = 'square yellow';}
+  else if (value < orangeRangeAir) {
     square.className = 'square orange';
   } else {
     square.className = 'square red';
@@ -92,8 +91,6 @@ function setColorLux(squareId, value) {
 
   if (value < redRangeLux) {
     square.className = 'square red';
-  } else if (value < orangeRangeLux) {
-    square.className = 'square orange';
   } else {
     square.className = 'square green';
   }
@@ -193,7 +190,7 @@ function creaGrafico(data) {
     data2.push(datiJSON[i]["AQ2"]);
   }
 
-  document.getElementById("grafici").innerHTML = "<canvas id='AirQualityGraph' height='500px' width='500px'></canvas>"
+  document.getElementById("grafici").innerHTML = "<l> Air Quality Graph </l> <canvas id='AirQualityGraph' height='500px' width='500px'></canvas>"
   var ctx = document.getElementById("AirQualityGraph").getContext("2d");
   var myChart = new Chart(ctx, {
     type: "line",
@@ -237,9 +234,16 @@ function creaGrafico(data) {
             drawTime: "beforeDatasetsDraw",
             yScaleID: "y",
             yMin: greenRangeAir,
+            yMax: yellowRangeAir,
+            backgroundColor: "rgba(253, 233, 16, 0.2)" // Giallo
+          }, {
+            type: "box",
+            drawTime: "beforeDatasetsDraw",
+            yScaleID: "y",
+            yMin: yellowRangeAir,
             yMax: orangeRangeAir,
             backgroundColor: "rgba(255, 165, 0, 0.2)" // Arancione
-          }, {
+          },{
             type: "box",
             drawTime: "beforeDatasetsDraw",
             yScaleID: "y",

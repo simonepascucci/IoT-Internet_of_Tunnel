@@ -24,9 +24,12 @@ body{
     .red {
         background-color: red;
     }
+    .yellow{
+      background-color: #fde910;
+    }
 span{
 color:white;
-font-size:13px;
+font-size:11px;
 }
 p{
 margin:0px;
