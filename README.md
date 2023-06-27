@@ -35,10 +35,6 @@ As part of our objectives, we are committed to reducing the overall system energ
 - [Design](/docs/second_delivery/Design.md)
 - [Evaluation](/docs/second_delivery/Evaluation.md)
 
-### Video
-
-- [Project Presentation](https://youtube.com)
-
 ## Third Delivery
 
 - [Concept](/docs/third_delivery/Concept.md)
