@@ -4,7 +4,7 @@ This file is an updated version of [this file](/docs/second_delivery/Concept.md)
 
 ## Brief Description
 
-Our project aims to employ a network of sensors and actuators to automate the management and monitoring of air quality and lighting conditions inside car galleries. We aim to offer a remote tool that enables real-time monitoring and usage, providing a convenient means for continuous surveillance and utilization.  
+Our project aims to employ a network of sensors and actuators to automate the management and monitoring of air quality and lighting conditions inside car galleries. We aim to offer a remote tool that enables remote monitoring providing a convenient means for continuous surveillance.  
 The goal of this section is to provide users with a comprehensive overview of the smart tunnel, describing the system usage from their point of view.
 
 ## Tunnel operator point of view
@@ -20,12 +20,11 @@ The following image shows a schematic representation of a tunnel, illustrating t
 
 ![Usage example](/docs/src/images/schemas/usage_example.jpg)
 
-### Monitoring and usage
+### Usage
 
-The operators in charge of monitoring and utilization of the smart tunnel system will have access to a web app from which he will be able to perform these operations.  
-The web app allows the operator to monitoring the data collected by the sensors, and to perform specific measurements on demand. This means that the operator is able change the measurement frequency rate and timing.  
-This system also allows the operator to remotely control the actuators.  
-The regulamentation for defining the designated individual in charge to perform these actions will follow the rules of the specific tunnel ordinance.
+To use the system, an operator simply needs to install the IoT sensors and actuators in the car gallery and connect them to the system's hub. Once the sensors are connected, they will begin collecting data on the air quality and lighting levels in the gallery.  
+Based on the data collected, the system will automatically manage the air conditioning system to maintain optimal conditions inside the gallery. Moreover, it will be capable of promptly detect anomalies in the lightening apparatus and quickly inform the technicians.  
+In addition, the data collected by the sensors will be tracked and transmitted to a remote server, where the operator will be able to access for remote monitoring.
 
 ## Tunnel user point of view
 
