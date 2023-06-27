@@ -130,18 +130,3 @@ Amplify is the AWS hosting service used for deployment.
 Below is a sample figure of the web app accesible [at this link](https://dev.d36cnvxl90u19s.amplifyapp.com)
 
 ![](/docs/src/images/web_app/index.png)
-
-## Additional Improvements
-
-### External data integration
-
-To optimize the system response time, we came up with the idea of incorporating external data on daily tunnel traffic conditions.  
-We were able to obtain traffic information throug a website that provides a complete chronology of road travel times in recent years.  
-We subsequently manipulated data provided by deriving the average travel time for each day over the last few years, resulting in a pattern like the one below.
-
-![](/docs/src/images/external_data.jpg)
-
-The idea is to modulate the sampling time of the air quality sensors with this information, by increasing or decreasing the sampling time according to the expected traffic.
-In particular our previous idea was to have a fixed sampling period of 10 minutes but now the integration of external data led us to the following solution. We calculate the mean value in the choosen traffic period and to this value will correspond a sampling period of 10 minutes. Then we are going to divide a day in 24 time slots. After this if the value of that time slot in the external traffic chart will be more or less than a certain percentage from the mean value then the sampling period of 10 minutes for that particular time slot will be increased or reduced by that percentage value. For example if in a particular time slot
-the time needed for a car to cross the entire tunnel will be 2 minutes and the mean value is of 4 minutes we will sample every 20 minutes because we expect less traffic and less need to frequently change the fans speed.
-We tought to integrate this data through the APIs provided by the precedently mentioned website called OutScraper and accessible [at this link](https://outscraper.com). Unfortunately the service is not free so we weren't able to use the APIs in our prototype.
