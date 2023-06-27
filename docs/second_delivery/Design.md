@@ -84,7 +84,7 @@ By positioning the light source on top of the cardboard, it generates a cone of 
 ## Managing the components
 
 Based on the European standard mentioned earlier, the gases considered harmful to human health require a minimum exposure time of 15 minutes to pose a risk.  
-We define 3 threshold of gas concentration as follows:
+We define 4 threshold of gas concentration as follows:
 
 - **No risk treshold**: the gas concentrations are below the potentially harmful values for humans. Fan sistem is switched off.
 - **Min risk treshold**: the gas concentrations are slightly above the potentially harmful values for humans. Fan sistem is switched on at 1/3 of maximum speed.
