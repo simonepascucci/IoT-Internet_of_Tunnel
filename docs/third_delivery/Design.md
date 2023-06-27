@@ -2,12 +2,12 @@
 
 This file is an updated version of [this file](/docs/second_delivery/Design.md)
 
-The proper functioning of the system depends on several complex technical aspects to be taken into account. In this section, we would like to address these issues in a real case scenario, describing the solutions and adaptations made to create the prototype.
+The proper functioning of the system depends on several complex technical aspects to be considered. In this section, we would like to address these issues in a real case scenario, describing the solutions and adaptations made to create the prototype.
 
 ## Technical aspects
 
-The first step to do to before starting the developement and deployment of the system is a deep analysis of the specific characteristic of the tunnel and the regulations to be complied with.  
-Considering that our project aims to automatically monitor and maintain the air quality and lighting conditions prioritizing energy efficiency, the main factors to be taken into account are:
+The first step before starting the development and deployment of the system is a deep analysis of the specific characteristic of the tunnel and the regulations to be complied with.  
+Considering that our project aims to automatically monitor and maintain the air quality and lighting conditions prioritizing energy efficiency, the main factors to be considered are:
 
 1. It is essential to have a regulamentation that defines the rules to be respected, to properly design the system for the specific needing. The air quality system must be based on a list of air pollutants to be monitored and their respective threshold values. Also, the minimum level of light to be guaranteed inside the tunnel must be clearly defined.  
     To make consistent assumptions for the development of this project we referred to the current Ambient Air Quality and Clean Air for Europe Standards of 2008.  
@@ -16,7 +16,7 @@ Considering that our project aims to automatically monitor and maintain the air 
    | Pollutant | Formula | Maximum concentration | Maximum exposition time |
    | :----------------- | :-----: | --------------------: | ----------------------- |
    | carbon dioxide | CO2 | 1800 mg/m3 | 8 hour |
-   | carbon monoxide | CO | 10 mg/m3 | 8 hour |
+   | carbon monoxide | CO | 1000 mg/m3 | 15 minutes |
    | Nitrogen dioxide | NO2 | 200 mg/m3 | 1 hour |
    | Sulphur dioxide | SO2 | 350 mg/m3 | 1 hour |
    | Particulate matter | PM10 | 50 mg/m3 | 24 hour |
@@ -142,6 +142,6 @@ We subsequently manipulated data provided by deriving the average travel time fo
 ![](/docs/src/images/external_data.jpg)
 
 The idea is to modulate the sampling time of the air quality sensors with this information, by increasing or decreasing the sampling time according to the expected traffic.
-In particular our previous idea was to have a fixed sampling period of 10 minutes but now the integration of external data led us to the following solution. We calculate the mean value in the choosen traffic period and to this value will correspond a sampling period of 10 minutes. Then we are going to divide a day in 24 time slots. After this if the value of that time slot in the external traffic chart will be more or less than a certain percentage from the mean value then the sampling period of 10 minutes for that particular time slot will be increased or reduced by that percentage value. For example if in a particular time slot 
+In particular our previous idea was to have a fixed sampling period of 10 minutes but now the integration of external data led us to the following solution. We calculate the mean value in the choosen traffic period and to this value will correspond a sampling period of 10 minutes. Then we are going to divide a day in 24 time slots. After this if the value of that time slot in the external traffic chart will be more or less than a certain percentage from the mean value then the sampling period of 10 minutes for that particular time slot will be increased or reduced by that percentage value. For example if in a particular time slot
 the time needed for a car to cross the entire tunnel will be 2 minutes and the mean value is of 4 minutes we will sample every 20 minutes because we expect less traffic and less need to frequently change the fans speed.
 We tought to integrate this data through the APIs provided by the precedently mentioned website called OutScraper and accessible [at this link](https://outscraper.com). Unfortunately the service is not free so we weren't able to use the APIs in our prototype.
