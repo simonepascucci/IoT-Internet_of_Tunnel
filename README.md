@@ -26,7 +26,7 @@ As part of our objectives, we are committed to reducing the overall system energ
 
 ### Video
 
-- [Project Presentation](https://youtu.be/eVTwDwK5-Hs)
+- [Project Presentation](https://www.youtube.com/watch?v=qPwCQMbU30s)
 
 ## Second Delivery
 
@@ -34,10 +34,6 @@ As part of our objectives, we are committed to reducing the overall system energ
 - [Concept](/docs/second_delivery/Concept.md)
 - [Design](/docs/second_delivery/Design.md)
 - [Evaluation](/docs/second_delivery/Evaluation.md)
-
-### Video
-
-- [Project Presentation](https://youtube.com)
 
 ## Third Delivery
 
@@ -51,5 +47,5 @@ As part of our objectives, we are committed to reducing the overall system energ
 
 ### Video
 
-- [Project Presentation](https://youtube.com)
+- [Project Presentation](https://youtu.be/nOzBFuhrOmo)
 - [Project Demonstration](https://youtu.be/TSAeotWgk8Y)
