@@ -26,7 +26,7 @@ As part of our objectives, we are committed to reducing the overall system energ
 
 ### Video
 
-- [Project Presentation](https://youtu.be/eVTwDwK5-Hs)
+- [Project Presentation](https://www.youtube.com/watch?v=qPwCQMbU30s)
 
 ## Second Delivery
 
