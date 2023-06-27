@@ -2,12 +2,12 @@
 
 This file is an updated version of [this file](/docs/second_delivery/Design.md)
 
-The proper functioning of the system depends on several complex technical aspects to be taken into account. In this section, we would like to address these issues in a real case scenario, describing the solutions and adaptations made to create the prototype.
+The proper functioning of the system depends on several complex technical aspects to be considered. In this section, we would like to address these issues in a real case scenario, describing the solutions and adaptations made to create the prototype.
 
 ## Technical aspects
 
-The first step to do to before starting the developement and deployment of the system is a deep analysis of the specific characteristic of the tunnel and the regulations to be complied with.  
-Considering that our project aims to automatically monitor and maintain the air quality and lighting conditions prioritizing energy efficiency, the main factors to be taken into account are:
+The first step before starting the development and deployment of the system is a deep analysis of the specific characteristic of the tunnel and the regulations to be complied with.  
+Considering that our project aims to automatically monitor and maintain the air quality and lighting conditions prioritizing energy efficiency, the main factors to be considered are:
 
 1. It is essential to have a regulamentation that defines the rules to be respected, to properly design the system for the specific needing. The air quality system must be based on a list of air pollutants to be monitored and their respective threshold values. Also, the minimum level of light to be guaranteed inside the tunnel must be clearly defined.  
     To make consistent assumptions for the development of this project we referred to the current Ambient Air Quality and Clean Air for Europe Standards of 2008.  
@@ -16,12 +16,12 @@ Considering that our project aims to automatically monitor and maintain the air 
    | Pollutant | Formula | Maximum concentration | Maximum exposition time |
    | :----------------- | :-----: | --------------------: | ----------------------- |
    | carbon dioxide | CO2 | 1800 mg/m3 | 8 hour |
-   | carbon monoxide | CO | 10 mg/m3 | 8 hour |
+   | carbon monoxide | CO | 1000 mg/m3 | 15 minutes |
    | Nitrogen dioxide | NO2 | 200 mg/m3 | 1 hour |
    | Sulphur dioxide | SO2 | 350 mg/m3 | 1 hour |
    | Particulate matter | PM10 | 50 mg/m3 | 24 hour |
 
-2. Once the regulamentation is clarified, it is necessary to understand the characteristics of the specific tunnel in terms of dimensions, expected traffic, type of users, normal light conditions etc.
+2. Once the regulamentation is clarified, it is necessary to understand the characteristics of the specific tunnel in terms of dimensions, expected traffic, type of users, normal light conditions etc.  
    This characteristic facilitates the comprehension of actuator specifications, determining the required quantity and strategic placements for optimal positioning.  
    Considering the environmental conditions is also crucial to enable connectivity of the monitoring system to the internet.
 
@@ -124,12 +124,12 @@ Step 2:
 The broker communicates with AWS IoT Core through a Python bridge always trough the MQTT protocol. The MQTT broker and bridge utilize the same topic (tunnel), while the bridge publishes the data to AWS IoT Core on the DATA topic.
 
 Step 3:  
-Data is received on AWS IoT Core, designed as if it is an ESP32 board. This elements allows to define rules to determine what actions to perform with the received data. In this way, all the data received on that specific topic is inserted into a table in DynamoDB.
+Data is received on AWS IoT Core, designed as if it is an ESP32 board. This element allows to define rules to determine what actions to perform with the received data. In this way, all the data received on that specific topic is inserted into a table in DynamoDB.
 
 Step 4:  
 By utilizing a Lambda function (AWS Python function), data is retrieved from the DynamoDB. The authorization to access the database is managed by AWS IAM. The API Gateway enables the creation of a RESTful GET API connected to the Lambda function from the previous step, providing an endpoint that can be called from the web app.  
 Amplify is the AWS hosting service used for deployment.
 
-Below is a sample figure of the web app
+Below is a sample figure of the web app.
 
 ![](/docs/src/images/web_app/index.png)
