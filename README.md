@@ -51,5 +51,5 @@ As part of our objectives, we are committed to reducing the overall system energ
 
 ### Video
 
-- [Project Presentation](https://youtube.com)
+- [Project Presentation](https://youtu.be/nOzBFuhrOmo)
 - [Project Demonstration](https://youtu.be/TSAeotWgk8Y)
