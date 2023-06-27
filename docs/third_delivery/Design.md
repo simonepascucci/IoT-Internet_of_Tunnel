@@ -91,9 +91,6 @@ We define 3 threshold of gas concentration as follows:
 - **Mid risk treshold**: the gas concentrations are moderately above the potentially harmful values for humans. Fan sistem is switched on at 2/3 of maximum speed.
 - **High risk treshold**: the gas concentrations are moderately above the potentially harmful values for humans. Fan sistem is switched on at maximum speed.
 
-Under the condition of no risk treshold, it is reasonable to assume that monitoring air quality every 10 minutes provides a timely response from the air conditioning system.  
-In the other conditions the graph below describes the different sampling period values.
-
 ![](/docs/src/images/schemas/tresholds.JPG)
 
 The sampling period is based on the time needs for a fan to move a total volume of air equal to the volume of air of the tunnel.
