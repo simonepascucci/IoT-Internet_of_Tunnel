@@ -14,10 +14,12 @@ The project's objective related to air quality is to ensure that it remains belo
 In order for the system to be deemed effective, it is crucial that the levels of air quality pollutants do not exceed specified values for a duration that is considered harmful to human health. The specified time limit can be found in the Design file's table.  
 After the initial version of the system is fully developed and deployed, it might be necessary to employ external sensors for monitoring purposes. These sensors would verify whether the values reported by the system align with the measurements obtained independently.
 
-Finally, in order to analyze changes in air quality, we collected external data on traffic patterns and utilized it to create a graph that illustrates the trend, as shown below.
+Finally, in order to analyze changes in air quality, we collected external data on traffic patterns from a website that provides a complete chronology of road travel times in recent years.  
+We subsequently used this data to create a graph that illustrates the trend, as shown below.
 ![](/docs/src/images/external_data.jpg)
 This enabled us to compare sensor readings with predicted air quality changes based on the traffic data.  
 Similar trends indicate proper operation.
+We tought to integrate this data through the APIs provided by the precedently mentioned website called OutScraper and accessible [at this link](https://outscraper.com). Unfortunately the service is not free so we weren't able to use the APIs in our prototype.
 
 ## Light conditions
 
