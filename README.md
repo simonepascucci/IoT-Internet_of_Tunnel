@@ -10,8 +10,8 @@
 
 ## Brief description
 
-Internet Of Tunnel project is a Monitoring and Control System solution designed to monitor and maintain the air quality and lighting conditions inside a tunnel.  
-With this project, we aim to improve the air quality and light levels inside the tunnel, in order to improve safety and healthiness for gallery users, both for pedestrians and vehicles, while also prioritizing energy efficiency.  
+Internet Of Tunnel project is a Monitoring and Control System solution designed to monitor and manage the air quality and lighting conditions inside a car tunnel.  
+With this project, we aim to improve the air quality and light levels inside car galleries, in order to improve safety and health for tunnel users, both pedestrians and vehicles, while prioritizing energy efficiency.  
 As part of our objectives, we are committed to reducing the overall system energy consumption, thereby promoting sustainability and minimizing environmental impact.
 
 ## First Delivery
