@@ -26,7 +26,7 @@ Finally, for the system to be considered effective, any error or failure in the 
 
 ## Overall energy usage
 
-TThe energy consumption of the proposed system mostly depends on the actual energy requirements of the actuators, especially of the air conditioning system. This enables the system to intelligently activate or deactivate the actuators and adjust their intensity as needed, resulting in optimized energy usage. As a result, when traffic is low or there is enough natural light coming from the outside, our system can consume significantly less energy compared to a system that does not calibrate the usage of actuators and operates at maximum speed continuously.  
+TThe energy consumption of the proposed system mostly depends on the actual energy requirements of the air conditioning system. This enables the system to intelligently activate or deactivate the actuators and adjust their intensity as needed, resulting in optimized energy usage. As a result, when traffic is low, our system consumes significantly less energy compared to a system that does not calibrate the usage of actuators and operates at maximum speed continuously.  
 We performed some experiments with our prototype to better explain this concept trough an example.  
 The following graph compares the power consumption of our system with an identical system in the same condition in which the fan system is always at maximum speed.  
 Depending on the fan speed, our ventilation system is able to save up to 20% energy when activated at minimum speed.
