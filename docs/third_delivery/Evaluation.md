@@ -19,7 +19,7 @@ We subsequently used this data to create a graph that illustrates the trend, as 
 ![](/docs/src/images/external_data.jpg)
 This enabled us to compare sensor readings with predicted air quality changes based on the traffic data.  
 Similar trends indicate proper operation.
-We tought to integrate this data through the APIs provided by the precedently mentioned website called OutScraper and accessible [at this link](https://outscraper.com). 
+We tought to integrate this data through the APIs provided by the precedently mentioned website called OutScraper and accessible [at this link](https://outscraper.com).   
 Unfortunately the service is not free so we weren't able to use the APIs in our prototype.
 
 ## Light conditions
